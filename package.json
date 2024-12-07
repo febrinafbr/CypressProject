@@ -1,0 +1,19 @@
+{
+  "name": "tak8cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-account": "npx cypress run --spec 'cypress/e2e/3-magento/create-account.cy.js' --browser edge",
+    "login": "npx cypress run --spec 'cypress/e2e/3-magento/login-with-pom-commands.cy.js' --browser edge",
+    "edit-account": "npx cypress run --spec 'cypress/e2e/3-magento/edit-account.cy.js' --browser edge",
+    "choose-products": "npx cypress run --spec 'cypress/e2e/3-magento/choose-products.cy.js' --browser edge",
+    "proceed-to-checkout": "npx cypress run --spec 'cypress/e2e/3-magento/proceed-to-checkout.cy.js' --browser edge"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.16.0"
+  }
+}

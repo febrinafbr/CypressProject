@@ -1,0 +1,12 @@
+{
+    "invalidUser": [
+      {
+        "usernm": "doni1@gmail.com",
+        "passw": "Doni-123"
+      },
+      {
+        "usernm": "doni12@gmail.com",
+        "passw": "Doni-125"
+      }
+    ]
+  }

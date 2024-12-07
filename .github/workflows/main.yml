@@ -10,8 +10,28 @@ jobs:
         uses: actions/checkout@v4
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Cypress run
+      - name: Create account
         uses: cypress-io/github-action@v6
         with:
           browser: edge
-          spec: cypress/e2e/3-magento/*.cy.js
+          spec: cypress/e2e/3-magento/create-account.cy.js
+      - name: Login account
+        uses: cypress-io/github-action@v6
+        with:
+          browser: edge
+          spec: cypress/e2e/3-magento/login-with-pom-commands.cy.js
+      - name: Edit account
+        uses: cypress-io/github-action@v6
+        with:
+          browser: edge
+          spec: cypress/e2e/3-magento/edit-account.cy.js
+      - name: Choose products
+        uses: cypress-io/github-action@v6
+        with:
+          browser: edge
+          spec: cypress/e2e/3-magento/choose-products.cy.js
+      - name: Proceed to checkout
+        uses: cypress-io/github-action@v6
+        with:
+          browser: edge
+          spec: cypress/e2e/3-magento/proceed-to-checkout.cy.js

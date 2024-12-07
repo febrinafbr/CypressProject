@@ -1,7 +1,7 @@
 describe("Choose Products", () => {
     beforeEach(() => {
         cy.visit(Cypress.config("baseUrl"));
-        cy.login("doni11@gmail.com","Doni-123");
+        cy.login("doni15@gmail.com","Doni-123");
         cy.wait(1000);
         cy.get("#ui-id-6 > :nth-child(2)").click();
         cy.wait(1000);

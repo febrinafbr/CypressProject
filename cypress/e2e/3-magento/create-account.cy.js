@@ -7,7 +7,7 @@ describe("Create an Account", () => {
     it("Success create an account", () => {
         cy.get("#firstname").type("Doni");
         cy.get("#lastname").type("Setiawan");
-        cy.get("#email_address").type("doni11@gmail.com");
+        cy.get("#email_address").type("doni15@gmail.com");
         cy.get("#password").type("Doni-123");
         cy.get("#password-confirmation").type("Doni-123");
         cy.contains('button', 'Create an Account').click();
@@ -16,7 +16,7 @@ describe("Create an Account", () => {
     it("Failed create an account - registered email", () => {
         cy.get("#firstname").type("Doni");
         cy.get("#lastname").type("Setiawan");
-        cy.get("#email_address").type("doni11@gmail.com");
+        cy.get("#email_address").type("doni15@gmail.com");
         cy.get("#password").type("Doni-125");
         cy.get("#password-confirmation").type("Doni-125");
         cy.contains('button', 'Create an Account').click();
